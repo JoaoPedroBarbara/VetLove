@@ -59,7 +59,7 @@ public class Principal {
 						System.out.println("Introduza o contacto do cliente: \n");
 						contacto = sc.next();
 
-						Cliente gere = new Cliente(id, nome, morada, email, contacto);
+						Cliente gere = new Cliente(nome, morada, email, contacto);
 
 						gestor.arClientes.add(gere);
 

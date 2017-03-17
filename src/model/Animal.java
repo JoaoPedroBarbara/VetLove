@@ -12,6 +12,16 @@ public class Animal
 	
 	
 	
+	public Ficha getFicha() {
+		return ficha;
+	}
+
+
+	public void setFicha(Ficha ficha) {
+		this.ficha = ficha;
+	}
+
+
 	public Animal(int id, String classificacao, String raca, String dataNasc, Ficha ficha) {
 		super();
 		this.id = id;
@@ -45,6 +55,18 @@ public class Animal
 	}
 	public void setDataNasc(String dataNasc) {
 		this.dataNasc = dataNasc;
+	}
+	
+	public double getGastosVacinas()
+	{
+		double total = 0;
+		for(Vacina v : ficha.getVacinas())
+		{
+			total += v.getPreco();
+			
+			
+		}
+		return total;
 	}
 	
 	

@@ -11,10 +11,10 @@ public class Cliente
 	String telefone;
 	ArrayList<Animal> animais;
 	
-	public Cliente(int id, String nome, String morada, String email, String telefone) 
+	public Cliente(String nome, String morada, String email, String telefone) 
 	{
 		super();
-		this.id = id;
+		
 		this.nome = nome;
 		this.morada = morada;
 		this.email = email;

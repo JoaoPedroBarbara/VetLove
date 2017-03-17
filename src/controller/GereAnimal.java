@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import model.Animal;
 import model.Cliente;
+import model.Ficha;
 
 public class GereAnimal 
 {
@@ -14,9 +15,9 @@ public class GereAnimal
 		arAnimais = new ArrayList<>();
 	}
 	
-	public void addAnimal(int id, String classificacao, String raca, String dataNasc)
+	public void addAnimal(int id, String classificacao, String raca, String dataNasc, Ficha ficha)
 	{
-		Animal a = new Animal(id, classificacao, raca, dataNasc);
+		Animal a = new Animal(id, classificacao, raca, dataNasc, ficha);
 		arAnimais.add(a);
 		
 	}
