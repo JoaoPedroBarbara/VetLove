@@ -9,6 +9,7 @@ public class Cliente
 	String morada;
 	String email;
 	String telefone;
+	ArrayList<Animal> animais;
 	
 	public Cliente(int id, String nome, String morada, String email, String telefone) 
 	{
@@ -18,7 +19,7 @@ public class Cliente
 		this.morada = morada;
 		this.email = email;
 		this.telefone = telefone;
-		this.arAnimal = arAnimal;
+		animais = new ArrayList<>();
 	}
 
 

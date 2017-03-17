@@ -6,17 +6,22 @@ public class Animal
 	String classificacao;
 	String raca;
 	String dataNasc;
+	Ficha ficha;
 	
 	
-	public Animal(int id, String classificacao, String raca, String dataNasc) {
+	
+	
+	
+	public Animal(int id, String classificacao, String raca, String dataNasc, Ficha ficha) {
 		super();
 		this.id = id;
 		this.classificacao = classificacao;
 		this.raca = raca;
 		this.dataNasc = dataNasc;
+		this.ficha = ficha;
 	}
-	
-	
+
+
 	public int getId() {
 		return id;
 	}
